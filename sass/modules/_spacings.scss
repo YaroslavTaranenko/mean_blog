@@ -1,0 +1,74 @@
+@mixin border-radius($amount: 10px){
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  border-radius: $amount;;
+}
+
+*{}
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100, 150, 200, 250, 300);
+
+@mixin generate-margin-bottom() {
+  @each $space in $spaceamounts {
+    .mb-#{$space} {
+      margin-bottom: #{$space}px;
+    }
+  }
+}
+@mixin generate-margin-right() {
+  @each $space in $spaceamounts {
+    .mr-#{$space} {
+      margin-right: #{$space}px;
+    }
+  }
+}
+@mixin generate-margin-left() {
+  @each $space in $spaceamounts {
+    .ml-#{$space} {
+      margin-left: #{$space}px;
+    }
+  }
+}
+@mixin generate-margin-top() {
+  @each $space in $spaceamounts {
+    .mt-#{$space} {
+      margin-top: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-top() {
+  @each $space in $spaceamounts {
+    .pt-#{$space} {
+      padding-top: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-bottom() {
+  @each $space in $spaceamounts {
+    .pb-#{$space} {
+      padding-bottom: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-left() {
+  @each $space in $spaceamounts {
+    .pl-#{$space} {
+      padding-left: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-right() {
+  @each $space in $spaceamounts {
+    .pr-#{$space} {
+      padding-right: #{$space}px;
+    }
+  }
+}
+
+@include generate-margin-bottom();
+@include generate-margin-right();
+@include generate-margin-top();
+@include generate-margin-left();
+@include generate-padding-bottom();
+@include generate-padding-top();
+@include generate-padding-left();
+@include generate-padding-right();

@@ -1,0 +1,133 @@
+ul{
+	list-style: none;
+}
+a:focus{
+	border: none;
+}
+/*---------------------------------------------- top menu -----------------------------*/
+#top-menu{
+	color: #fff;
+	background-color: #333;
+	height: 30px;
+	font-size: 15px;
+}
+#top-menu a{
+	color: #fff;
+}
+#top-menu .menu > ul > li{
+	display: inline-block;
+	padding: 0px 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 30px;
+	height: 30px;
+	margin: 0;
+	background-color: #333;
+}
+#top-menu>.user > ul > li{
+	display: inline-block;
+	padding: 0 10px;
+	background-color: #333;
+	text-align: center;
+	position: relative;
+}
+#top-menu>.user>ul{
+	margin-right: 50px;
+	line-height: 30px;
+}
+#top-menu>.user>ul>li:hover>ul{
+	display: block;
+	pointer-events: auto;
+}
+#top-menu>.user>ul>li>ul{
+	z-index: 100;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	pointer-events: none;
+	display: none;
+}
+#top-menu>.user>ul>li>ul>li{
+	display: block;
+	width: 100px;
+	text-align: center;
+	background-color: #333;
+}
+#top-menu>.user>ul>li>ul>li>a{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/*---------------------------------- login form ----------------------------------*/
+.show{
+	display: block!important;
+}
+.modal-fon{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0, .7);
+	display: none;
+}
+#login-form{
+	width: 500px;
+	height: 500px;
+	position: fixed;
+	height: 80%;
+	width: 50%;
+	margin: 10% 25%;
+}
+/*------------------------------header---------------------------------*/
+header{
+	padding: 20px 0;
+}
+#logo, #slogan{
+	height: 70px;
+
+}
+#logo{
+	background: url('../images/logo.png') no-repeat center;
+	background-size: contain;
+}
+#slogan{
+	background: url('../images/slogan-fon.jpg') no-repeat;
+	background-size: cover;
+}
+
+
+/*----------------------------- main-menu -------------------*/
+#main-menu{
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	height: 35px;
+}
+#main-menu a{
+	color: #fff;
+}
+#main-menu>ul>li{
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 40px;
+	text-transform: capitalize;
+}
+
+/*--------------------------- footer ----------------------------*/
+
+footer{
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #333;
+}
+footer a{
+	color: #fff;
+}
+footer a:hover{
+	color: #ddd;
+}

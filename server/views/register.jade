@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	div registration
+	.container
+		.row
+			
+			.col-lg-2 
+
+			.card.col-lg-8
+				.card-header
+					h1.col-lg-12.text-center.mb-5 Registration
+				.card-body
+					form.form(action="/api/register" method="POST")
+						.form-group.row
+							label.col-lg-3 Email:
+							.col-lg-9
+								input.form-control(type="email" name="email" placeholder="Enter your email")
+						.form-group.row
+							label.col-lg-3 Password:
+							.col-lg-9
+								input.form-control(type="password" name="password" placeholder="Enter your password")
+						.form-group.row
+							label.col-lg-3 Display name:
+							.col-lg-9
+								input.form-control(type="text" name="name" placeholder="Enter name")
+						.form-group.row
+							label.col-lg-3 First name:
+							.col-lg-9
+								input.form-control(type="text" name="firstName" placeholder="Enter your first name")
+						.form-group.row
+							label.col-lg-3 Last name:
+							.col-lg-9
+								input.form-control(type="text" name="lastName" placeholder="Enter your last name")
+						.form-group.row
+							label.col-lg-3 Avatar:
+							.col-lg-9
+								input.form-control(type="text" name="avatar" placeholder="Choose avatar")
+						.form-group.row.text-center
+							button.btn.btn-primary(type="submit") Register
+			.col-lg-2
