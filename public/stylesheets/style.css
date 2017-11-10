@@ -1,133 +1,778 @@
-ul{
-	list-style: none;
+/* line 1, ../../sass/partials/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-a:focus{
-	border: none;
+
+/* line 6, ../../sass/partials/_reset.scss */
+a, a:hover {
+  text-decoration: none;
 }
+
+/* line 10, ../../sass/partials/_reset.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 13, ../../sass/partials/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 16, ../../sass/partials/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-150 {
+  margin-bottom: 150px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-250 {
+  margin-bottom: 250px;
+}
+
+/* line 12, ../../sass/modules/_spacings.scss */
+.mb-300 {
+  margin-bottom: 300px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-10 {
+  margin-right: 10px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-15 {
+  margin-right: 15px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-20 {
+  margin-right: 20px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-25 {
+  margin-right: 25px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-30 {
+  margin-right: 30px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-35 {
+  margin-right: 35px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-40 {
+  margin-right: 40px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-45 {
+  margin-right: 45px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-50 {
+  margin-right: 50px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-100 {
+  margin-right: 100px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-150 {
+  margin-right: 150px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-200 {
+  margin-right: 200px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-250 {
+  margin-right: 250px;
+}
+
+/* line 19, ../../sass/modules/_spacings.scss */
+.mr-300 {
+  margin-right: 300px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-5 {
+  margin-top: 5px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-10 {
+  margin-top: 10px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-15 {
+  margin-top: 15px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-25 {
+  margin-top: 25px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-35 {
+  margin-top: 35px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-45 {
+  margin-top: 45px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-50 {
+  margin-top: 50px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-100 {
+  margin-top: 100px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-150 {
+  margin-top: 150px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-200 {
+  margin-top: 200px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-250 {
+  margin-top: 250px;
+}
+
+/* line 33, ../../sass/modules/_spacings.scss */
+.mt-300 {
+  margin-top: 300px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-5 {
+  margin-left: 5px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-10 {
+  margin-left: 10px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-15 {
+  margin-left: 15px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-20 {
+  margin-left: 20px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-25 {
+  margin-left: 25px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-30 {
+  margin-left: 30px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-35 {
+  margin-left: 35px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-40 {
+  margin-left: 40px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-45 {
+  margin-left: 45px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-50 {
+  margin-left: 50px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-100 {
+  margin-left: 100px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-150 {
+  margin-left: 150px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-200 {
+  margin-left: 200px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-250 {
+  margin-left: 250px;
+}
+
+/* line 26, ../../sass/modules/_spacings.scss */
+.ml-300 {
+  margin-left: 300px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-35 {
+  padding-bottom: 35px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-45 {
+  padding-bottom: 45px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-150 {
+  padding-bottom: 150px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-200 {
+  padding-bottom: 200px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-250 {
+  padding-bottom: 250px;
+}
+
+/* line 47, ../../sass/modules/_spacings.scss */
+.pb-300 {
+  padding-bottom: 300px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-5 {
+  padding-top: 5px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-10 {
+  padding-top: 10px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-15 {
+  padding-top: 15px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-20 {
+  padding-top: 20px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-25 {
+  padding-top: 25px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-30 {
+  padding-top: 30px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-35 {
+  padding-top: 35px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-40 {
+  padding-top: 40px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-45 {
+  padding-top: 45px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-50 {
+  padding-top: 50px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-100 {
+  padding-top: 100px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-150 {
+  padding-top: 150px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-200 {
+  padding-top: 200px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-250 {
+  padding-top: 250px;
+}
+
+/* line 40, ../../sass/modules/_spacings.scss */
+.pt-300 {
+  padding-top: 300px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-5 {
+  padding-left: 5px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-10 {
+  padding-left: 10px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-15 {
+  padding-left: 15px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-20 {
+  padding-left: 20px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-25 {
+  padding-left: 25px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-30 {
+  padding-left: 30px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-35 {
+  padding-left: 35px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-40 {
+  padding-left: 40px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-45 {
+  padding-left: 45px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-50 {
+  padding-left: 50px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-100 {
+  padding-left: 100px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-150 {
+  padding-left: 150px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-200 {
+  padding-left: 200px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-250 {
+  padding-left: 250px;
+}
+
+/* line 54, ../../sass/modules/_spacings.scss */
+.pl-300 {
+  padding-left: 300px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-5 {
+  padding-right: 5px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-10 {
+  padding-right: 10px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-15 {
+  padding-right: 15px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-20 {
+  padding-right: 20px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-25 {
+  padding-right: 25px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-30 {
+  padding-right: 30px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-35 {
+  padding-right: 35px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-40 {
+  padding-right: 40px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-45 {
+  padding-right: 45px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-50 {
+  padding-right: 50px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-100 {
+  padding-right: 100px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-150 {
+  padding-right: 150px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-200 {
+  padding-right: 200px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-250 {
+  padding-right: 250px;
+}
+
+/* line 61, ../../sass/modules/_spacings.scss */
+.pr-300 {
+  padding-right: 300px;
+}
+
 /*---------------------------------------------- top menu -----------------------------*/
-#top-menu{
-	color: #fff;
-	background-color: #333;
-	height: 30px;
-	font-size: 15px;
+/* line 3, ../../sass/partials/_header.scss */
+#top-menu {
+  color: #fff;
+  background-color: #333;
+  height: 30px;
+  font-size: 15px;
 }
-#top-menu a{
-	color: #fff;
+/* line 8, ../../sass/partials/_header.scss */
+#top-menu a {
+  color: #fff;
 }
-#top-menu .menu > ul > li{
-	display: inline-block;
-	padding: 0px 10px;
-	text-transform: uppercase;
-	font-weight: bold;
-	line-height: 30px;
-	height: 30px;
-	margin: 0;
-	background-color: #333;
+/* line 13, ../../sass/partials/_header.scss */
+#top-menu .menu > ul > li {
+  display: inline-block;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  margin: 0;
+  background-color: #333;
 }
-#top-menu>.user > ul > li{
-	display: inline-block;
-	padding: 0 10px;
-	background-color: #333;
-	text-align: center;
-	position: relative;
+/* line 26, ../../sass/partials/_header.scss */
+#top-menu > .user > ul {
+  margin-right: 50px;
+  line-height: 30px;
 }
-#top-menu>.user>ul{
-	margin-right: 50px;
-	line-height: 30px;
+/* line 29, ../../sass/partials/_header.scss */
+#top-menu > .user > ul > li {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #333;
+  text-align: center;
+  position: relative;
 }
-#top-menu>.user>ul>li:hover>ul{
-	display: block;
-	pointer-events: auto;
+/* line 35, ../../sass/partials/_header.scss */
+#top-menu > .user > ul > li > ul {
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  pointer-events: none;
+  display: none;
 }
-#top-menu>.user>ul>li>ul{
-	z-index: 100;
-	position: absolute;
-	right: 0;
-	top: 30px;
-	pointer-events: none;
-	display: none;
+/* line 42, ../../sass/partials/_header.scss */
+#top-menu > .user > ul > li > ul > li {
+  display: block;
+  width: 100px;
+  text-align: center;
+  background-color: #333;
 }
-#top-menu>.user>ul>li>ul>li{
-	display: block;
-	width: 100px;
-	text-align: center;
-	background-color: #333;
+/* line 47, ../../sass/partials/_header.scss */
+#top-menu > .user > ul > li > ul > li a {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
-#top-menu>.user>ul>li>ul>li>a{
-	display: block;
-	width: 100%;
-	text-align: center;
+/* line 55, ../../sass/partials/_header.scss */
+#top-menu > .user > ul > li:hover > ul {
+  display: block;
+  pointer-events: auto;
 }
 
 /*---------------------------------- login form ----------------------------------*/
-.show{
-	display: block!important;
+/* line 67, ../../sass/partials/_header.scss */
+.show {
+  display: block !important;
 }
-.modal-fon{
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 10;
-	background-color: rgba(0,0,0, .7);
-	display: none;
+
+/* line 70, ../../sass/partials/_header.scss */
+.modal-fon {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
 }
-#login-form{
-	width: 500px;
-	height: 500px;
-	position: fixed;
-	height: 80%;
-	width: 50%;
-	margin: 10% 25%;
+
+/* line 80, ../../sass/partials/_header.scss */
+#login-form {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  height: 80%;
+  width: 50%;
+  margin: 10% 25%;
 }
+
 /*------------------------------header---------------------------------*/
-header{
-	padding: 20px 0;
-}
-#logo, #slogan{
-	height: 70px;
-
-}
-#logo{
-	background: url('../images/logo.png') no-repeat center;
-	background-size: contain;
-}
-#slogan{
-	background: url('../images/slogan-fon.jpg') no-repeat;
-	background-size: cover;
+/* line 89, ../../sass/partials/_header.scss */
+header {
+  padding: 20px 0;
 }
 
+/* line 92, ../../sass/partials/_header.scss */
+#logo, #slogan {
+  height: 70px;
+}
+
+/* line 96, ../../sass/partials/_header.scss */
+#logo {
+  background: url("../images/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+/* line 100, ../../sass/partials/_header.scss */
+#slogan {
+  background: url("../images/slogan-fon.jpg") no-repeat;
+  background-size: cover;
+}
 
 /*----------------------------- main-menu -------------------*/
-#main-menu{
-	background-color: #333;
-	color: #fff;
-	font-weight: bold;
-	height: 35px;
+/* line 107, ../../sass/partials/_header.scss */
+#main-menu {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  height: 35px;
 }
-#main-menu a{
-	color: #fff;
+/* line 112, ../../sass/partials/_header.scss */
+#main-menu a {
+  color: #fff;
 }
-#main-menu>ul>li{
-	display: inline-block;
-	padding: 0 10px;
-	line-height: 40px;
-	text-transform: capitalize;
+/* line 116, ../../sass/partials/_header.scss */
+#main-menu > ul > li {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 40px;
+  text-transform: capitalize;
 }
 
-/*--------------------------- footer ----------------------------*/
-
-footer{
-	height: 35px;
-	line-height: 35px;
-	color: #fff;
-	font-weight: bold;
-	background-color: #333;
+/* line 1, ../../sass/partials/_footer.scss */
+footer {
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #333;
 }
-footer a{
-	color: #fff;
+/* line 7, ../../sass/partials/_footer.scss */
+footer a {
+  color: #fff;
 }
-footer a:hover{
-	color: #ddd;
+/* line 9, ../../sass/partials/_footer.scss */
+footer a:hover {
+  color: #ddd;
 }

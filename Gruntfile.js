@@ -46,6 +46,15 @@ module.exports = function(grunt){
 				}
 			}
 		},
+		compass:{
+			dev:{
+				options:{
+					sassDir: './sass',
+					cssDir: './public/stylesheets',
+					environment: 'development'
+				}
+			}
+		},
 		watch:{
 			options:{
 				livereload: true
@@ -81,9 +90,14 @@ module.exports = function(grunt){
 					'./public/javascripts/admin/*.js'
 				],
 				tasks:['concat:admin', 'uglify:admin']
+			},
+			compass:{
+				files:[
+					'./sass/*.scss',
+					'./sass/**/*.scss'
+				],
+				tasks:['compass']
 			}
-
-
 		}
 		
 	});
@@ -93,6 +107,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 
 	grunt.registerTask('default', ['express:dev', 'watch']);
 	grunt.registerTask('build', ['concat:main', 'concat:admin', 'uglify:main', 'uglify:admin']);

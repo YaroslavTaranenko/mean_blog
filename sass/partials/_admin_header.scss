@@ -1,0 +1,61 @@
+header{
+	background-color: #ccc;
+	height: 25px;
+}
+#top-menu{
+	span{
+		position: relative;
+		ul{
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 25px;
+			z-index: 100;
+			li{
+				background-color: #ccc;
+			}
+		}
+		&:hover{
+			ul{
+				display: block;
+			}
+		}
+	}
+}
+
+
+/*-------------------------- left menu ----------------------------*/
+left-panel{
+	background-color: #ddeefb;
+	height: calc(100vh - 45px);
+	margin: 0;
+	padding: 0
+}
+.left-menu{
+	display: block;
+	margin: 0;
+	padding: 0;
+	a{
+		display: block;
+		&:hover{
+			background-color: #cceeeb;
+		}
+	}
+	li{
+		height: 35px;
+		line-height: 35px;
+		margin: 0;
+		padding: 0;
+		label{
+			color: #888;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+	}
+}
+
+/*---------------------------- content ----------------------------*/
+content{
+	background-color: #eef;
+
+}
