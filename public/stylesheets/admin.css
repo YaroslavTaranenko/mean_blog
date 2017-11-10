@@ -1,4 +1,66 @@
+*{
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+
 header{
 	background-color: #ccc;
-	height: 50px;
+	height: 25px;
+}
+#top-menu>span{
+	position: relative;
+}
+#top-menu>span>ul{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	z-index: 100;
+}
+#top-menu>span:hover>ul{
+	display: block;
+}
+#top-menu>span>ul>li{
+	background-color: #ccc;
+}
+/*-------------------------- left menu ----------------------------*/
+left-panel{
+	background-color: #ddeefb;
+	height: calc(100vh - 45px);
+	margin: 0;
+	padding: 0
+}
+.left-menu{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.left-menu a{
+	display: block;
+}
+.left-menu a:hover{
+	text-decoration: none;
+	background-color: #cceeeb;
+}
+.left-menu > li{
+	height: 35px;
+	line-height: 35px;
+	margin: 0;
+	padding: 0;
+}
+.left-menu > li > label{
+	color: #888;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+
+
+
+/*---------------------------- content ----------------------------*/
+content{
+	background-color: #eef;
+
 }

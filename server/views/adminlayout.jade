@@ -10,12 +10,48 @@ html(ng-app="admin" ng-controller="defaultCtrl")
 		script(src="//localhost:35729/livereload.js" type="text/javascript")
 		script(src="/javascripts/jquery.min.js" type="text/javascript")
 	body
-		header.row
-			#logo.col-lg-7
-			#top-menu.col-lg-5
+		header
+			.container
+				.row
+					#logo.col-lg-9
+					#top-menu.col-lg-3
+						span.pull-right.pr-5 
+							a(href) #{user.displayName}
+							ul
+								li
+									a(href) Profile
+								li 
+									a(href="/logout") Log out
 
+		.row(style="margin: 0")
+			left-panel.col-lg-3.col-sm-3
+				my-side-menu
+					menu-label(type="label" title="Main")
+					menu-parent(type="parent" title="Articles")
+						menu-subitem(type="link" title="Add new")
+						menu-subitem(type="link" title="List")
+					menu-parent(type="parent" title="Users")
+						menu-parent(title="Roles")
+							menu-subitem(title="Add role")
+							menu-subitem(title="Roles list")
 
-		block content
+						menu-subitem(type="link" title="Add user")
+						menu-subitem(type="link" title="List")
+					my-menu
+				//ul.left-menu
+					li
+						label Main
+					li
+						a(href) Articles
+						ul
+							li
+								a(href) Add new
+							li
+								a(href) list
+					li
+						a(href) Users
+			content.col-lg-9.col-sm-9
+				block content
 
 
 

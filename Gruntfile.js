@@ -63,7 +63,7 @@ module.exports = function(grunt){
 			public:{
 				files: [
 					'./server/views/*.jade', './server/views/**/*.jade', 
-					'./public/stylesheets/style.css'
+					'./public/stylesheets/*.css'
 				]
 			},
 			angularMain:{

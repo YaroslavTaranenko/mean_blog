@@ -1,17 +1,4 @@
-(function(){
-	'use strict';
-	var app = angular.module('admin', []);
-
-	app.controller('defaultCtrl', ['$http', '$scope', function($http, $scope){
-		//alert('angular is ok.');
-	}]);
-})();;(function(){
-	'use strict';
-	angular.module('admin')
-		.controller('articlesCtrl', ['$http', '$scope', function($http, $scope){
-			alert('articlesCtrl is working.');
-		}]);
-})();;/*				my-side-menu
+/*				my-side-menu
 					menu-item(type="label" title="Main")
 					menu-item(type="parent" title="Articles")
 						menu-item(type="link" title="Add new")

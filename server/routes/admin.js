@@ -6,6 +6,7 @@ var isLoged = function(req, res, next){
 	if(req.isAuthenticated()){
 		return next();
 	}
+	res.redirect('/');
 	res.status(401);
 	res.json({"message": "not authenticated."});
 	//res.redirect('/login');
@@ -13,7 +14,7 @@ var isLoged = function(req, res, next){
 
 /* GET home page. */
 router.get('/', isLoged, function(req, res, next) {	
-	res.render('admin/index', { title: 'Admin panel' });
+	res.render('admin/index', { title: 'Admin panel', user: req.user });
 });
 
 
