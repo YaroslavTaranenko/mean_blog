@@ -25,31 +25,29 @@ html(ng-app="admin" ng-controller="defaultCtrl")
 
 		.row(style="margin: 0")
 			left-panel.col-lg-3.col-sm-3
-				my-side-menu
-					menu-label(type="label" title="Main")
-					menu-parent(type="parent" title="Articles")
-						menu-subitem(type="link" title="Add new")
-						menu-subitem(type="link" title="List")
-					menu-parent(type="parent" title="Users")
-						menu-parent(title="Roles")
-							menu-subitem(title="Add role")
-							menu-subitem(title="Roles list")
-
-						menu-subitem(type="link" title="Add user")
-						menu-subitem(type="link" title="List")
-					my-menu
-				//ul.left-menu
+				
+				ul.left-menu
 					li
 						label Main
-					li
-						a(href) Articles
+					li(dropdown)
+						a() 
+							i.fa.fa-book
+							| Articles
 						ul
 							li
-								a(href) Add new
+								a() Add new
 							li
-								a(href) list
-					li
-						a(href) Users
+								a() list
+					li(dropdown)
+						a() 
+							i.fa.fa-user
+							| Users
+						ul
+							li
+								a Add user
+							li 
+								a Users list
+
 			content.col-lg-9.col-sm-9
 				block content
 

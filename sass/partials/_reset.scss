@@ -10,8 +10,8 @@ a, a:hover{
 a:focus{
 	outline: none;
 }
-a:hover{
-	text-decoration: none;
+a{
+	cursor: pointer;
 }
 ul{
 	list-style: none;

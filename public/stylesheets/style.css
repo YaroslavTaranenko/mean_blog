@@ -16,8 +16,8 @@ a:focus {
 }
 
 /* line 13, ../../sass/partials/_reset.scss */
-a:hover {
-  text-decoration: none;
+a {
+  cursor: pointer;
 }
 
 /* line 16, ../../sass/partials/_reset.scss */

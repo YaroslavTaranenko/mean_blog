@@ -16,8 +16,8 @@ a:focus {
 }
 
 /* line 13, ../../sass/partials/_reset.scss */
-a:hover {
-  text-decoration: none;
+a {
+  cursor: pointer;
 }
 
 /* line 16, ../../sass/partials/_reset.scss */
@@ -667,30 +667,60 @@ left-panel {
   margin: 0;
   padding: 0;
 }
-/* line 38, ../../sass/partials/_admin_header.scss */
-.left-menu a {
-  display: block;
-}
-/* line 40, ../../sass/partials/_admin_header.scss */
-.left-menu a:hover {
-  background-color: #cceeeb;
-}
-/* line 44, ../../sass/partials/_admin_header.scss */
+/* line 39, ../../sass/partials/_admin_header.scss */
 .left-menu li {
-  height: 35px;
   line-height: 35px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
-/* line 49, ../../sass/partials/_admin_header.scss */
+/* line 45, ../../sass/partials/_admin_header.scss */
 .left-menu li label {
   color: #888;
   text-transform: uppercase;
   font-size: 14px;
 }
+/* line 50, ../../sass/partials/_admin_header.scss */
+.left-menu li a {
+  display: block;
+}
+/* line 52, ../../sass/partials/_admin_header.scss */
+.left-menu li a i.fa {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #333;
+  margin: 0 10px 0 0;
+  background-color: #b4d9f6;
+  border-radius: 5px;
+}
+/* line 64, ../../sass/partials/_admin_header.scss */
+.left-menu li a:hover {
+  background-color: #cceeeb;
+}
+/* line 66, ../../sass/partials/_admin_header.scss */
+.left-menu li a:hover i.fa {
+  color: #007aff;
+}
+/* line 73, ../../sass/partials/_admin_header.scss */
+.left-menu li > ul {
+  display: none;
+}
+/* line 77, ../../sass/partials/_admin_header.scss */
+.left-menu li.opened > ul {
+  display: block;
+}
+/* line 79, ../../sass/partials/_admin_header.scss */
+.left-menu li.opened > ul li {
+  display: block;
+  margin: 0 0 0 65px;
+}
 
 /*---------------------------- content ----------------------------*/
-/* line 58, ../../sass/partials/_admin_header.scss */
+/* line 89, ../../sass/partials/_admin_header.scss */
 content {
   background-color: #eef;
 }

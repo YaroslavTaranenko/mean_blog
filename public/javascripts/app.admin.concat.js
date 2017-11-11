@@ -21,6 +21,20 @@
 						menu-item(type="link" title="List")*/
 (function(){
 	'use strict';
+	var menu = {
+
+	};
+	angular.module('admin').directive('dropdown', function(){
+		return{
+			restrict: 'A',
+			link: function(scope, element, attrs){
+				element.on('click', function(){
+					element.toggleClass('opened');
+					$compile(element)(scope);
+				});
+			}
+		}
+	});
 	angular.module('admin').directive('mySideMenu', function(){
 		return {
 			restrict: 'E',

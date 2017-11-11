@@ -35,21 +35,52 @@ left-panel{
 	display: block;
 	margin: 0;
 	padding: 0;
-	a{
-		display: block;
-		&:hover{
-			background-color: #cceeeb;
-		}
-	}
+	
 	li{
-		height: 35px;
+		
 		line-height: 35px;
 		margin: 0;
 		padding: 0;
+		position: relative;
 		label{
 			color: #888;
 			text-transform: uppercase;
 			font-size: 14px;
+		}
+		a{
+			display: block;
+			i.fa{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				font-size: 17px;
+				line-height: 30px;
+				text-align: center;
+				color: #333;
+				margin: 0 10px 0 0;
+				background-color: #b4d9f6;
+				border-radius: 5px;
+			}
+			&:hover{
+				background-color: #cceeeb;
+				i.fa{
+					color: #007aff;
+				}
+			}
+
+
+		}
+		>ul{
+			display: none;
+		}
+		&.opened{
+			>ul{
+				display: block;
+				li{
+					display: block;
+					margin: 0 0 0 65px;
+				}
+			}
 		}
 	}
 }
